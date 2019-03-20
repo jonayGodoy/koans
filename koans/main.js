@@ -44,6 +44,12 @@ describe("koans",function(){
             assert.equal(result, 12);
         });
 
+        it("module 12 and 3", function(){
+            let result = 12 % 3;
+
+            assert.equal(result, 4);
+        });
+
         it("increment and decrement", function(){
             let number1 = 1;
             let number2 = 2;
