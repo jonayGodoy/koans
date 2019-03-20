@@ -25,6 +25,16 @@ describe("koans",function(){
 
                 assert.equal(result, 3);
             });
+
+            it("different between let and const",function(){
+                let text1 = "Hi";
+                text1 = "Bye";
+                const text2 = "Bye";
+                text2 = "Hi";
+
+                assert.equal(text1, "Hi");
+                assert.equal(text2, "Bye");
+            });
         });
 
 
