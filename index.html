@@ -11,8 +11,11 @@
 <script>mocha.setup('bdd')</script>
 <!-- load code you want to test here -->
 <!-- load your test files here -->
-<script src="koans/1.What_is_it_javascript.js"></script>
-<script>
+
+<script type="module" src="koans/1.What_is_it_javascript.js"></script>
+<script type="module" src="koans/2.Variables.js"></script>
+<script type="module">
+    mocha.checkLeaks();
     mocha.run();
 </script>
 </body>
