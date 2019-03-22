@@ -16,5 +16,21 @@ describe("4. Loops and Array", function(){
         let array = ["bananas","pineapple","water melon"];
 
         assert.equal(array.length, 2);
-    })
+    });
+
+    it("Pop", function(){
+        let array = ["table","bed","sofa"];
+
+        array.pop();
+
+        assert.equal(array.length, 10);
+    });
+
+    it("Push ", function(){
+        let array = ["table","bed","sofa"];
+
+        array.push("wardrove");
+
+        assert.equal(array.length, 0);
+    });
 });
