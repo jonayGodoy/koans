@@ -33,4 +33,15 @@ describe("4. Loops and Array", function(){
 
         assert.equal(array.length, 0);
     });
+
+    it("position array", function(){
+        let array = ["bananas","pineapple","water melon"];
+        array.pop();
+        array.push("pear");
+        array.push("orange");
+
+        let result = array[0];
+
+        assert.equal(result, "orange");
+    });
 });
