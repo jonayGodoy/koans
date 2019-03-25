@@ -44,4 +44,25 @@ describe("4. Loops and Array", function(){
 
         assert.equal(result, "orange");
     });
+
+
+    it("Loop, For", function(){
+        let lastGenerateMessage = "";
+        for(let i = 0; i <=20; i++){
+            lastGenerateMessage = "Walking east "+i+" step";
+        }
+
+        assert.equal(lastGenerateMessage, "Walking east 3 step");
+    });
+
+    it("Loop, While", function(){
+        let lastGenerateMessage = "";
+        let steps = 0;
+        while(steps <20){
+            steps = steps + 1;
+            lastGenerateMessage = 'Walking east '+steps+' step';
+        }
+
+        assert.equal(lastGenerateMessage, "Walking east 0 step");
+    });
 });
