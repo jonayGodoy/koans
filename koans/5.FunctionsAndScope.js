@@ -33,5 +33,17 @@ describe("5. Functions and scope", function(){
         let result = sayHi();
 
         assert.equal(result, "Hi, i'm David");
+    });
+
+
+    it("arguments again", function(){
+        function sayBye(){
+            return "Bye, "+ name;
+        }
+        let text = "David";
+
+        let result = sayBye(text);
+
+        assert.equal(result, "Bye, David");
     })
 });
