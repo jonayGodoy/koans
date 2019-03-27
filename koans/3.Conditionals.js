@@ -90,5 +90,4 @@ describe("3. Conditional operators + Case statements, Data types [Bools]", funct
 
         assert.equal(note, "Fine");
     });
-
 });
