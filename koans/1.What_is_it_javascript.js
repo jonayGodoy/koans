@@ -3,7 +3,8 @@ let assert = chai.assert;
 describe("1. What is it javascript?", function(){
 
     it("test green", function(){
-        assert.equal(true, false);
+        let bool = false;
+        assert.equal(bool, true);
     });
 
     it("concatenate string",function(){

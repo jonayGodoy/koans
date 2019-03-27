@@ -8,7 +8,12 @@
 <div id="mocha"></div>
 <script src="./lib/node_modules/mocha/mocha.js"></script>
 <script src="./lib/node_modules/chai/chai.js"></script>
-<script>mocha.setup('bdd')</script>
+<script>
+    mocha.setup({
+        ui: 'bdd',
+        asyncOnly: true
+    });
+</script>
 <!-- load code you want to test here -->
 <!-- load your test files here -->
 
