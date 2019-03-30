@@ -27,6 +27,7 @@ describe("2. Variables", function() {
     });
 
     it("Different between let and const", function () {
+        //tip: const never can change;
         let text1 = "Hi";
         text1 = "Bye";
         const text2 = "Bye";
@@ -41,6 +42,23 @@ describe("2. Variables", function() {
 
         assert.equal(result, 12);
     });
+
+    it("The operator '+' and the mixture of types.", function(){
+        //In this exercise you can change the assert
+
+        //when you mixture different type, amazing things can happen
+        // normally, it's better you don't do this thing
+        // but it's important you know it.
+
+        let stringPlusNumber = "1"+2;
+        let numberPlusString = "2"+1;
+        let numberPlusNumberPlusString = 2+2+"1";
+
+        assert.equal(stringPlusNumber, "3");
+        assert.equal(numberPlusString, "21");
+        assert.equal(numberPlusNumberPlusString, "221");
+    });
+
 
     it("Module 12 and 3", function () {
         let result = 12 % 3;

@@ -9,13 +9,14 @@ describe("3. Conditional operators + Case statements, Data types [Bools]", funct
     });
 
     it("Structure if", function(){
-        let wasExecuted = false;
+        let execute = false;
 
-        if(false){
-            wasExecuted = true;
+        let result = "";
+        if(execute){
+           result = "Hello"
         }
 
-        assert.equal(wasExecuted, true);
+        assert.equal(result, "Hello");
     });
 
     it("Equal operator", function(){
@@ -90,4 +91,33 @@ describe("3. Conditional operators + Case statements, Data types [Bools]", funct
 
         assert.equal(note, "Fine");
     });
+
+    it("&& AND operator", function(){
+        //In this exercise you can change the assert
+
+        let result1 = true && true;
+        let result2 = false && true;
+        let result3 = true && false;
+        let result4 = false && false;
+
+        assert.equal(result1, false);
+        assert.equal(result2, false);
+        assert.equal(result3, true);
+        assert.equal(result4, true);
+    });
+
+    it("&& OR operator", function(){
+        //In this exercise you can change the assert
+
+        let result1 = true || true;   // true
+        let result2 = false || true;  // false
+        let result3 = true || false;  // false
+        let result4 = false && false; // false
+
+        assert.equal(result1, false);
+        assert.equal(result2, true);
+        assert.equal(result3, false);
+        assert.equal(result4, true);
+    });
+
 });
