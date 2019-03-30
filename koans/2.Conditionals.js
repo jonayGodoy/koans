@@ -143,4 +143,25 @@ describe("3. Conditional operators + Case statements, Data types [Bools]", funct
         assert.equal(result4, true);
     });
 
+    it("'Greater than ...' and 'Less than ...' operator", function(){
+        let result1 = 3 < 5;
+        let result2 = 3 > 5;
+
+        assert.equal(result1, true);
+        assert.equal(result2, true);
+    });
+
+    it("Do you have legal age?", function(){
+        let age = 7;
+
+        let message = "";
+        if(age >= 18){
+            message = "you have legal age."
+        }else{
+            message = "you don't have legal age.";
+        }
+
+        assert.equal(message, "you have legal age.");
+    });
+
 });
