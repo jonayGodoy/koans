@@ -2,7 +2,7 @@ let assert = chai.assert;
 
 describe("3. Conditional operators + Case statements, Data types [Bools]", function(){
 
-    it("type bool", function(){
+    it("Type bool", function(){
         let boolean = false;
 
         assert.equal(boolean, true);
@@ -26,19 +26,22 @@ describe("3. Conditional operators + Case statements, Data types [Bools]", funct
     });
 
     it("Structure if...else ", function(){
-        let age = 15;
-        let hasLegalAge = false;
+        let sum = 1+3;
+        let message = "";
 
-        if(age >= 18){
-            hasLegalAge = true;
+        if(sum == 2){
+            message = "You guessed it right!";
+        }else{
+            message = "How can you be so wrong?";
         }
 
-        assert.equal(hasLegalAge, true);
+        assert.equal(message, "You guessed it right!");
     });
 
     it("Nested if...else", function(){
         let greeting = "";
-        let time = "evening";
+        let time = "morning";
+
         if( time === "morning" )
         {
             greeting ="Good morning";
@@ -55,7 +58,27 @@ describe("3. Conditional operators + Case statements, Data types [Bools]", funct
             }
         }
 
-        assert.equal(greeting, "Good night");
+        assert.equal(greeting, "Good evening");
+    });
+
+    it("Nested 'if else'", function(){
+        let greeting = "";
+        let time = "morning";
+
+        if( time === "morning" )
+        {
+            greeting ="Good morning";
+        }
+        else if (time === "evening" )
+        {
+            greeting = "Good evening";
+        }
+        else
+        {
+            greeting = "Good night";
+        }
+
+        assert.equal(greeting, "Good evening");
     });
 
     it("switch", function(){

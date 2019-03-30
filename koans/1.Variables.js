@@ -2,13 +2,26 @@ let assert = chai.assert;
 
 describe("2. Variables", function() {
 
-    it("Variable store values", function () {
+    it("test green", function(){
+        let bool = false;
+        assert.equal(bool, true);
+    });
+
+    it("Variable store values, Assignment", function () {
+        let variable = "";
+
+        assert.equal(variable, "Hi");
+    });
+
+    it("Variable you can change values", function () {
         let variable = "Hi";
 
         variable = "Bye";
 
         assert.equal(variable, "Hi");
     });
+
+
 
     it("Varible types, Number", function () {
         let result1 = 1+1;
@@ -18,7 +31,25 @@ describe("2. Variables", function() {
         assert.equal(result2, 6);
     });
 
-    it("Concatenate string", function (){
+    it("add number", function(){
+        let number1 = 1;
+        let number2 = 2;
+
+        let result = number1-number2;
+
+        assert.equal(result, 3);
+    });
+
+    it("Varible types, string",function(){
+        let text1 = "Hi,";
+        let text2 = "David";
+
+        let result = text1text2;
+
+        assert.equal(result, "Hi,David");
+    });
+
+    it("Concatenate string again", function (){
         let author = "Bob Marley";
         let song = "Don't worry be happy";
         let message = "My favourite song is "+author+" by"+song;

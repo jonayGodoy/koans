@@ -2,7 +2,7 @@ let assert = chai.assert;
 
 describe("5. Functions and scope", function(){
 
-    it("function", function(){
+    it("Function", function(){
         function generateName(){
             return "David";
         }
@@ -12,7 +12,7 @@ describe("5. Functions and scope", function(){
         assert.equal(name, "Anna");
     });
 
-    it("function flow", function(){
+    it("Function flow", function(){
         function returnVariable(var2){
             return var2;
         }
@@ -24,7 +24,7 @@ describe("5. Functions and scope", function(){
         assert.equal(result, "Var 2");
     });
 
-    it("arguments", function(){
+    it("Arguments", function(){
         function sayHi(name){
             return "Hi, i'm "+ name;
         }
@@ -36,7 +36,7 @@ describe("5. Functions and scope", function(){
     });
 
 
-    it("arguments again", function(){
+    it("Arguments again", function(){
         function sayBye(){
             return "Bye, "+ name;
         }
