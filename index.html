@@ -9,6 +9,7 @@
 <script src="./lib/node_modules/mocha/mocha.js"></script>
 <script src="./lib/node_modules/chai/chai.js"></script>
 <script>
+	let assert = chai.assert;
     mocha.setup({
         ui: 'bdd'
     });
@@ -16,11 +17,11 @@
 <!-- load code you want to test here -->
 <!-- load your test files here -->
 
-<script type="module" src="koans/1.Variables.js"></script>
-<script type="module" src="koans/2.Conditionals.js"></script>
-<script type="module" src="koans/3.LoopsAndArray.js"></script>
-<script type="module" src="koans/4.FunctionsAndScope.js"></script>
-<script type="module" src="koans/5.FirstObject_POJO.js"></script>
+<script src="koans/1.Variables.js"></script>
+<script src="koans/2.Conditionals.js"></script>
+<script src="koans/3.LoopsAndArray.js"></script>
+<script src="koans/4.FunctionsAndScope.js"></script>
+<script src="koans/5.FirstObject_POJO.js"></script>
 <script type="module">
     mocha.checkLeaks();
     mocha.run();

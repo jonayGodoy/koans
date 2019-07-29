@@ -1,6 +1,4 @@
-let assert = chai.assert;
-
-describe("4. Loops and Array", function(){
+describe("3. Loops and Array", function(){
 
     it("Array", function(){
         let array = [];

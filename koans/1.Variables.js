@@ -1,6 +1,4 @@
-let assert = chai.assert;
-
-describe("2. Variables", function() {
+describe("1. Variables", function() {
 
     it("test green", function(){
         let bool = false;
@@ -20,7 +18,6 @@ describe("2. Variables", function() {
 
         assert.equal(variable, "Hi");
     });
-
 
 
     it("Varible types, Number", function () {

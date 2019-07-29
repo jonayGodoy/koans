@@ -1,6 +1,4 @@
-let assert = chai.assert;
-
-describe("5. Functions and scope", function(){
+describe("4. Functions and scope", function(){
 
     it("Function", function(){
         function generateName(){

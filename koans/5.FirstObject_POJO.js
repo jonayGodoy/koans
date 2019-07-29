@@ -1,6 +1,4 @@
-let assert = chai.assert;
-
-describe("5 The first object, POJO(Plain Old Object Javascript)", function(){
+describe("5. The first object, POJO(Plain Old Object Javascript)", function(){
 
     it("properties", function(){
         let user = {

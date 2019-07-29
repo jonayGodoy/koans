@@ -1,6 +1,4 @@
-let assert = chai.assert;
-
-describe("3. Conditional operators + Case statements, Data types [Bools]", function(){
+describe("2. Conditional operators + Case statements, Data types [Bools]", function(){
 
     it("Type bool", function(){
         let boolean = false;
